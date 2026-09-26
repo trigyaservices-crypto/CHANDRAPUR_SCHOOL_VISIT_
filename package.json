@@ -1,0 +1,32 @@
+{
+  "name": "chandrapur-school-visit",
+  "version": "1.0.0",
+  "description": "Chandrapur District — School Field Visit & Mapping Platform",
+  "main": "build.js",
+  "scripts": {
+    "predeploy": "node build.js",
+    "prestart": "node build.js",
+    "build": "node build.js",
+    "start": "npx serve dist -p 8000",
+    "preview": "node build.js && npx wrangler dev",
+    "deploy": "node build.js && npx wrangler deploy",
+    "deploy:pages": "node build.js && npx wrangler pages deploy dist"
+  },
+  "keywords": [
+    "chandrapur",
+    "maharashtra",
+    "education",
+    "school-mapping",
+    "field-visit",
+    "route-planner",
+    "inspection"
+  ],
+  "author": "District Administration Chandrapur",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "serve": "^14.2.4"
+  },
+  "devDependencies": {
+    "wrangler": "^3.100.0"
+  }
+}
